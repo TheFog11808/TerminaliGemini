@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Terminale Gemini - Menu Principale</title>
+ <style>
+    body {
+      background: #000;
+      color: #39ff14;
+      font-family: 'Share Tech Mono', monospace, 'Courier New', Courier, monospace;
+      font-size: 1.5em;
+      margin: 0;
+      padding: 0;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+    }
+    .terminal-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 320px;
+      height: 100vh;
+      background: #000;
+      border-right: 2px solid #39ff14;
+      box-sizing: border-box;
+      padding: 2em 1em;
+      overflow-y: auto;
+      text-shadow: 0 0 8px #39ff14, 0 0 16px #39ff14;
+    }
+    .terminal-content {
+      margin-left: 320px;
+      padding: 2em;
+      max-width: calc(100vw - 320px);
+      overflow-wrap: break-word;
+      text-shadow: 0 0 8px #39ff14, 0 0 16px #39ff14;
+    }
+    a {
+      color: #39ff14;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 1.5em;
+      font-size: 1.25em;
+      transition: background 0.2s;
+      padding: 0.5em 0;
+      text-shadow: 0 0 8px #39ff14, 0 0 16px #39ff14;
+    }
+    a:hover {
+      background: #39ff14;
+      color: #000;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      max-width: 100%;
+      margin: 0;
+    }
+    /* Versione mobile: menu full width sopra contenuto */
+    @media (max-width: 600px) {
+      .terminal-menu {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 2px solid #39ff14;
+        padding: 1em;
+        overflow-y: visible;
+      }
+      .terminal-content {
+        margin-left: 0;
+        padding: 1em;
+        max-width: 100vw;
+      }
+    }
+  </style>
+
+  <!-- Google Fonts per effetto “computer terminal” -->
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="terminal-menu">
+    <h1>== TERMINALE GEMINI ==</h1>
+    <a href="index.html">[HOME]</a>
+    <a href="Doc-Park.html">[#RISTRETTO# Appunti personali]</a>
+    <a href="Alarm-logs.html">[REGISTRO ALLARMI]</a>
+    <!-- Altri link a terminali -->
+  </div>
+<div class="terminal-content">
+  <h2>Registro allarmi di sistema [Sezione non editabile]</h2>
+  <pre>
+[Giorno 318 - 04:22]
+ALLARME: Strutturale critico
+ZONA: Baia motori
+
+[Giorno 317 - 23:41]
+ALLARME: Decompressione ambiente
+ZONA: Corridoio 4D
+
+[Giorno 314 - 12:05]
+ALLARME: Intrusione biologica massiva
+ZONA: Sezione criogenica B
+
+[Giorno 310 - 19:18]
+ALLARME: Malfunzionamento sistemi ventilazione
+ZONA: Condotto Nord
+
+[Giorno 305 - 03:59]
+ALLARME: Anomalia elettrica
+ZONA: Quadro serra principale
+
+[Giorno 302 - 15:12]
+ALLARME: Sensori pressione in tilt
+ZONA: Ponte inferiore 2
+
+[Giorno 299 - 00:27]
+ALLARME: Rilevata tossina atmosferica
+ZONA: Baia coltivazione 3
+
+[Giorno 295 - 21:43]
+ALLARME: Uscita liquame idroponico
+ZONA: Serbatoio 5
+
+[Giorno 288 - 09:31]
+ALLARME: Blocco accesso tecnico
+ZONA: Laboratorio botanico
+
+[Giorno 284 - 17:56]
+ALLARME: Guasto minore illuminazione
+ZONA: Corridoio 2A
+
+[Giorno 276 - 13:49]
+ALLARME: Anomalia temperatura
+ZONA: Stiva materiali
+
+[Giorno 272 - 05:21]
+ALLARME: Impulso elettrico anomalo
+ZONA: Centrale monitoraggio
+
+[Giorno 259 - 11:10]
+ALLARME: Movimenti non identificati
+ZONA: Baia carico est
+
+[Giorno 248 - 20:37]
+ALLARME: Flusso idrico alterato
+ZONA: Condotta 4
+
+[Giorno 230 - 22:18]
+ALLARME: Oscillazione dati biologici
+ZONA: Serra secondaria
+
+[Giorno 214 - 00:03]
+ALLARME: Ritardi crescita backup
+ZONA: Magazzino semi
+
+[Giorno 197 - 06:29]
+ALLARME: Segnalazione isolata mini-intrusione
+ZONA: Condotto ventilazione Delta
+
+[Giorno 185 - 15:45]
+ALLARME: Microvariazione parametri atmosfera
+ZONA: Ponte superiore
+
+[Giorno 172 - 02:57]
+ALLARME: Fluttuazione minore energia
+ZONA: Quadro elettrico C
+
+[Giorno 160 - 14:22]
+ALLARME: Nessuna anomalia rilevata
+ZONA: //
+
+// --- Fine Registro --- //
+  </pre>
+</div>
+</body>
+</html>

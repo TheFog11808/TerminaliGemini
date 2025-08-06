@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Terminale Gemini - Menu Principale</title>
+ <style>
+    body {
+      background: #000;
+      color: #39ff14;
+      font-family: 'Share Tech Mono', monospace, 'Courier New', Courier, monospace;
+      font-size: 1.5em;
+      margin: 0;
+      padding: 0;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+    }
+    .terminal-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 320px;
+      height: 100vh;
+      background: #000;
+      border-right: 2px solid #39ff14;
+      box-sizing: border-box;
+      padding: 2em 1em;
+      overflow-y: auto;
+      text-shadow: 0 0 8px #39ff14, 0 0 16px #39ff14;
+    }
+    .terminal-content {
+      margin-left: 320px;
+      padding: 2em;
+      max-width: calc(100vw - 320px);
+      overflow-wrap: break-word;
+      text-shadow: 0 0 8px #39ff14, 0 0 16px #39ff14;
+    }
+    a {
+      color: #39ff14;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 1.5em;
+      font-size: 1.25em;
+      transition: background 0.2s;
+      padding: 0.5em 0;
+      text-shadow: 0 0 8px #39ff14, 0 0 16px #39ff14;
+    }
+    a:hover {
+      background: #39ff14;
+      color: #000;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      max-width: 100%;
+      margin: 0;
+    }
+    /* Versione mobile: menu full width sopra contenuto */
+    @media (max-width: 600px) {
+      .terminal-menu {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 2px solid #39ff14;
+        padding: 1em;
+        overflow-y: visible;
+      }
+      .terminal-content {
+        margin-left: 0;
+        padding: 1em;
+        max-width: 100vw;
+      }
+    }
+  </style>
+
+  <!-- Google Fonts per effetto “computer terminal” -->
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="terminal-menu">
+    <h1>== TERMINALE GEMINI ==</h1>
+    <a href="index.html">[HOME]</a>
+    <a href="Doc-Park.html">[#RISTRETTO# Appunti personali]</a>
+    <a href="Alarm-logs.html">[REGISTRO ALLARMI]</a>
+    <!-- Altri link a terminali -->
+  </div>
+<div class="terminal-content">
+  <h2>Diario Personale — Dr.ssa L. Park</h2>
+  <pre>
+Giorno 1 – Risveglio tecnico
+Siamo stati scongelati dopo sei mesi di viaggio. I sistemi della Serra Genesis si presentano stabili, la Ficus Viridium—varietà Omega—sembra rispondere bene ai parametri di crescita accelerata previsti. Il commissario di bordo ci ha raccomandato cautela: nessun esperimento fuori protocollo.
+
+Giorno 13
+Notato un incremento del 4% nel metabolismo fotosintetico della Ficus—sopra la norma, ma nulla di allarmante. Ho inserito nuovi filtri ultravioletti, sperando che riequilibrino la crescita. Il team di agro-informatica è soddisfatto. Un botanikos scherza: «Tra poco dovremo potarla come un bonsai».
+
+Giorno 98
+Risveglio nuovamente. La serra è… mutata. Il fogliame ha preso tinte violacee mai registrate. Un rampicante ha aggirato il sistema d’irrigazione centrale. Ho ordinato nuovi prelievi per capire la mutazione, ma non emergono variazioni nel DNA. Il direttore non è preoccupato, ma il mio ruolo è dubitare.
+
+Giorno 175
+Richiamata d’urgenza. Durante la nostra ibernazione, la pianta ha “digerito” parte dei pannelli di controllo ambientale. Alcuni sensori d’umidità risultano isolati dallo spesso strato di muschio. I droni manutentori hanno dovuto lasciare la serra a causa delle interferenze delle radici nel canale ottico. Ho richiesto supporto tecnico. Le piante non dovrebbero mai essere così fameliche.
+
+Giorno 210
+Tentativo di potatura meccanica—fallito. La Ficus Omega ha reagito “difendendosi”: la linfa contiene ora una tossina che irrita la pelle e offusca la vista. Perlopiù, la crescita della pianta sembra “diretta”, quasi intenzionale: alcuni rami aggirano porte automatiche disattivate. Ho lasciato un avviso: accesso solo in tuta protettiva.
+
+Giorno 302
+Il personale viene scongelato solo per interventi d’emergenza. Abbiamo scoperto che le radici sono penetrate nei condotti principali di ventilazione—là dove, se s’intasano, rischiamo la depressurizzazione di mezza nave. Ho tentato di codificare barriere laser manualmente, ma i sistemi falliscono: la pianta sembra interferire con le frequenze radio e i sensori ottici.
+
+Giorno 318
+Le luci d’allarme lampeggiano nelle baie. Interi corridoi sono inaccessibili. La nave vibra sotto i colpi dei rami che si espandono tra paratie e condutture. Ho lasciato queste note nel terminale principale. Se qualcuno leggerà… fate attenzione. La Ficus Omega non vuole più farsi estirpare.
+  </pre>
+</div>
+</body>
+</html>

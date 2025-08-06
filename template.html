@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Terminale Gemini - Menu Principale</title>
+ <style>
+    body {
+      background: #000;
+      color: #39ff14;
+      font-family: 'Share Tech Mono', monospace, 'Courier New', Courier, monospace;
+      font-size: 1.5em;
+      margin: 0;
+      padding: 0;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+    }
+    .terminal-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 320px;
+      height: 100vh;
+      background: #000;
+      border-right: 2px solid #39ff14;
+      box-sizing: border-box;
+      padding: 2em 1em;
+      overflow-y: auto;
+      text-shadow: 0 0 8px #39ff14, 0 0 16px #39ff14;
+    }
+    .terminal-content {
+      margin-left: 320px;
+      padding: 2em;
+      max-width: calc(100vw - 320px);
+      overflow-wrap: break-word;
+      text-shadow: 0 0 8px #39ff14, 0 0 16px #39ff14;
+    }
+    a {
+      color: #39ff14;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 1.5em;
+      font-size: 1.25em;
+      transition: background 0.2s;
+      padding: 0.5em 0;
+      text-shadow: 0 0 8px #39ff14, 0 0 16px #39ff14;
+    }
+    a:hover {
+      background: #39ff14;
+      color: #000;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      max-width: 100%;
+      margin: 0;
+    }
+    /* Versione mobile: menu full width sopra contenuto */
+    @media (max-width: 600px) {
+      .terminal-menu {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 2px solid #39ff14;
+        padding: 1em;
+        overflow-y: visible;
+      }
+      .terminal-content {
+        margin-left: 0;
+        padding: 1em;
+        max-width: 100vw;
+      }
+    }
+  </style>
+
+  <!-- Google Fonts per effetto “computer terminal” -->
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="terminal-menu">
+    <h1>== TERMINALE GEMINI ==</h1>
+    <a href="index.html">[HOME]</a>
+    <a href="Doc-Park.html">[#RISTRETTO# Appunti personali]</a>
+    <a href="Alarm-logs.html">[REGISTRO ALLARMI]</a>
+    <!-- Altri link a terminali -->
+  </div>
+<div class="terminal-content">
+  <h2>Inserire nome contenuto della pagina</h2>
+  <pre>
+corpo del contenuto della pagina
+  </pre>
+</div>
+</body>
+</html>
